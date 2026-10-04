@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-main: "Manrope";
+    --font-heading:"PT Serif";
+    --font-main-sub: "Merriweather";
+    --font-heading-sub: "Inter";
+
+    --primary-color: #0010FF;
+    --secondary-color: #00087e;
+    --tertiary-color: rgb(176, 250, 255);
+    --gray: gray;
+    --white: #ffffff;
+    --black: #000000;
+}

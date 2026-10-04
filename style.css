@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-main: "Manrope";
+    --font-heading:"PT Serif";
+    --font-main-sub: "Merriweather";
+    --font-heading-sub: "Inter";
+
+    --primary-color: #0010FF;
+    --secondary-color: #00087e;
+    --tertiary-color: rgb(176, 250, 255);
+    --gray: gray;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 80%;
+    border: 1px solid var(--primary-color);
+    background-color: var(--white);
+    height: 400px;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    form {
+        h1 {
+            font-family: var(--font-heading-sub);
+            font-size: x-large;
+            margin-top: 30px;
+            color: var(--primary-color);
+        }
+        p {
+            font-family: var(--font-main);
+            font-size: 11px;
+            color: var(--gray);
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.8rem;
+            gap: 0.3rem;
+
+            label {
+                font-family: var(--font-heading-sub);
+                font-size: small;
+                font-weight: bold;
+            }
+
+            input {
+                width: 100%;
+                height: 40px;
+                border-radius: 10px;
+                padding-left: 40px;
+                outline: none;
+                border: 1px solid var(--secondary-color);
+            }
+
+            #password {
+                background: url("key.png");
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-position: 10px center;
+            }
+
+            #name {
+                background: url("person.png");
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-position: 10px center;
+            }
+        }
+
+        #passbox {
+            position: relative;
+
+            span {
+                font-size: large;
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                cursor: pointer;
+            }
+
+            #eyeon {
+                display: none;
+            }
+        }
+
+        button {
+            width: 66%;
+            margin: 0 auto;
+            margin-top: 1.3rem;
+            height: 35px;
+            outline: none;
+            border-radius: 5px;
+            display: block;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    article{
+        margin-top: 15px;
+
+        aside {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+
+            span {
+                font-size: medium;
+                color: var(--primary-color);
+            }
+
+            p {
+                font-size: 11px;
+                font-family: var(--font-heading-sub);
+                transform: translateY(2px);
+                color: var(--gray);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .login-container {
+    width: 75%;
+    padding: 2rem;
+
+    form {
+        h1 {
+            font-family: var(--font-heading-sub);
+            font-size: xx-large;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 13px;
+        }
+        div{
+            gap: 0.5rem;
+        }
+
+        button {
+            height: 40px;
+            border-radius: 9px;
+            font-size: medium;
+        }
+    }
+
+        article{
+
+            aside {
+                font-size: 13px;
+                display: flex;
+                flex-direction: row;
+
+                span {
+                    font-size: medium;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .login-container {
+
+        form {
+            button {
+                width: 60%;
+            }
+        }
+    }
+}
