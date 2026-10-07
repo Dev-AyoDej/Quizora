@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-main: "Manrope";
+    --font-heading:"PT Serif";
+    --font-main-sub: "Merriweather";
+    --font-heading-sub: "Inter";
+
+    --primary-color: #2563EB;
+    --secondary-color: #00087e;
+    --tertiary-color: #e0eeff;
+    --gray: gray;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    background: radial-gradient(
+    circle at 50% -10%,
+    rgba(59, 130, 246, 0.12) 0%,
+    rgba(59, 130, 246, 0.05) 25%,
+    #ffffff 55%
+    );
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+nav {
+    background: var(--tertiary-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.6rem;
+    padding-top: 0.6rem;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+
+            span {
+                color: var(--black);
+                transition: 0.3s;
+                color: var(--primary-color);
+            }
+            
+            p {
+                color: var(--black);
+                font-size: small;
+                font-family: var(--font-main);
+                font-weight: 700;
+                color: var(--primary-color);
+            }
+        }
+
+        #library {
+            flex-direction: row;
+            color: var(--black);
+            background-color: var(--primary-color);
+            color: var(--white);
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 25px;
+            gap: 0.2rem;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+            padding: 0.55rem;
+
+            span {
+                color: var(--white);
+                font-variation-settings: 'FILL' 1;
+            }
+            p {
+                color: var(--white);
+                font-size: small;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    nav {
+        bottom: 20px;
+        width: 70%;
+        border-radius: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    }
+}

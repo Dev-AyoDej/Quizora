@@ -10,9 +10,9 @@
     --font-main-sub: "Merriweather";
     --font-heading-sub: "Inter";
 
-    --primary-color: #0010FF;
+    --primary-color: #2563EB;
     --secondary-color: #00087e;
-    --tertiary-color: rgb(176, 250, 255);
+    --tertiary-color: #e0eeff;
     --gray: gray;
     --white: #ffffff;
     --black: #000000;
@@ -23,29 +23,28 @@ body {
     align-items: center;
     display: flex;
     min-height: 100vh;
+    background-color: var(--tertiary-color);
 }
 
 .login-container {
     width: 80%;
-    border: 1px solid var(--primary-color);
     background-color: var(--white);
     height: 400px;
     border-radius: 1rem;
     padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 
     form {
-        h1 {
-            font-family: var(--font-heading-sub);
-            font-size: x-large;
+        img {
+            width: 120px;
             margin-top: 30px;
-            color: var(--primary-color);
         }
         p {
             font-family: var(--font-main);
             font-size: 11px;
             color: var(--gray);
         }
+
         div{
             display: flex;
             flex-direction: column;
@@ -106,10 +105,9 @@ body {
             outline: none;
             border-radius: 5px;
             display: block;
-            background-color: var(--secondary-color);
+            background-color: var(--primary-color);
             color: var(--white);
             border: none;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
     }
 
