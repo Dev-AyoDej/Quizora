@@ -1,13 +1,14 @@
 const username = localStorage.getItem("username");
 const welcomemsg = document.getElementById("welcome");
 
-const navlinks = document.querySelectorAll(".navlinks");
-navlink.forEach(function (link) {
-    link.addEventListener("click", 
-        function () {
-        navlinks.forEach(function(item){
-            item.classList.remove("active");
-        });
-        link.classList.add("active");
-    });
+const avatarBtn = document.getElementById("avatarBtn");
+avatarBtn.addEventListener("click",
+    function(){
+        window.location.href = "profile_settings.html";
+});
+
+const walink = document.getElementById("feedback");
+walink.addEventListener("click",
+    function(){
+        window.location.href = "https://wa.me/message/GOSEQO37OF23A1";
 });

@@ -130,6 +130,11 @@ header {
             width: 120px;
         }
     }
+    button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
     p {
         font-family: Manrope;
         background-color: var(--primary-color);
@@ -171,7 +176,7 @@ main {
     padding: 1rem;
     border-radius: 15px;
     
-    height: 33vh;
+    height: 190px;
     margin-top: 40px;
     display: flex;
 
@@ -252,7 +257,7 @@ main {
     padding: 0.8rem;
     border-radius: 15px;
 
-    height: 33vh;
+    height: 190px;
     display: flex;
 
     border: 1px solid var(--tertiary-color);
@@ -343,7 +348,7 @@ main {
             gap: 0.5rem;
             justify-content: center;
 
-            height: 34vh;
+            height: 190px;
             width: 150px;
             flex: 0 0 150px;
             
@@ -528,7 +533,7 @@ main {
         gap: 0.8rem;
 
         border: none;
-        height: 31vh;
+        height: 176px;
 
         h5 {
             font-family: var(--font-heading-sub);
